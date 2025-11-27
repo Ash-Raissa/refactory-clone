@@ -1,0 +1,147 @@
+.navbar { 
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-wrapper img{
+  display: block;
+  height: 50px;
+  width: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  background: purple;
+}
+
+.navbar-nav .nav-link i {
+  font-size: 18px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.hero-text {
+  margin-bottom: 40px;
+}
+
+.hero-text p {
+  color: #fff;
+  line-height: 1.4;
+  margin: 0 0 40px 0;
+}
+
+.hero-text .line1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text .line2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.hero-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-box {
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 150px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.hero-box a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#partner { background-color: purple; color: #fff; }
+#explore { background-color: yellow; color: #333; }
+#hire { background-color: white; color: #333; }
+
+#partner:hover, #explore:hover {
+  background-color: white;
+  color: #333;
+  transform: translateY(-5px);
+}
+
+#hire:hover {
+  background-color: #0d1f5b;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero-text .line1 { font-size: 28px; }
+  .hero-text .line2 { font-size: 18px; }
+}

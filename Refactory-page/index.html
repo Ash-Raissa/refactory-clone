@@ -4,60 +4,120 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Refactory Page</title>
+  <title>Refactory Clone</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
+  <!-- Navigation bar -->
+  <nav>
+    <div class="logo">
+      <img src="https://refactory.academy/wp-content/uploads/2025/07/Refactory-Logo-White.png" alt="refactory logo" width="auto" height="40">
+    </div>
 
-        <!-- Refactory Logo -->
-        <div class="logo-wrapper">
-          <img src="refactoryLogo.png" alt="Logo">
-        </div>
+    <!-- Nav Links -->
+    <di>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="/financialAid">Financial Aid</a></li>
+        <li class="nav-item"><a class="nav-link" href="/techTalent">Tech Talent</a></li>
+        <li class="nav-item"><a class="nav-link" href="/partnerships">Partnerships</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stories">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/faqs">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </di>
+  </nav>
 
-        <!-- Nav Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="/financialAid">Financial Aid</a></li>
-          <li class="nav-item"><a class="nav-link" href="/techTalent">Tech Talent</a></li>
-          <li class="nav-item"><a class="nav-link" href="/partnerships">Partnerships</a></li>
-          <li class="nav-item"><a class="nav-link" href="/stories">Stories</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="/faqs">FAQs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        </ul>
-
-      </div>
-    </nav>
-  </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-text">
-        <p>
-          <span class="line1">Transforming Africa's Tech Talent for the Future.</span><br>
-          <span class="line2">Tech programs by and for the Tech industry.</span>
-        </p>
-      </div>
-      <div class="hero-container">
-        <div class="hero-box" id="partner">
-          <a href="/partner">Partner with us</a>
-        </div>
-        <div class="hero-box" id="explore">
-          <a href="/explore">Explore programs</a>
-        </div>
-        <div class="hero-box" id="hire">
-          <a href="/hire">Hire Talent</a>
-        </div>
+    <div class="hero-content">
+      <h2>Transforming Africa's Tech Talent for the Future</h2>
+      <h4>Tech programs by and for the Tech Industry</h4>
+      <div class="hero-buttons">
+        <a href="" class="btn btn1">Partner with Us <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="" class="btn btn2">Explore Programs <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="" class="btn btn3">Hire Talent<i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
+
+  <!-- About section -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Refactory Acadeny</h2>
+      <h4>Empowering Uganda's Next Generation of Tech Talent</h4>
+      <p>
+        Refactory is a software-skilling academy addressing the need to
+        produce skilled software developers in Uganda today. We are
+        training the next generation of software developer talent and
+        experts responsive to the needs of the ecosystem. <br>
+        Refactory Academy is revolutionizing the tech industry in Uganda
+        by blending essential in-demand tech skills with soft skills needed by
+        the tech industry.
+      </p>
+      <a class="btn btn4" href="#">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="about-image">
+      <img src="https://refactory.academy/wp-content/uploads/2025/08/0G2A8223-1536x1024.jpg"
+        alt="refactory-staff-image">
+    </div>
+  </section>
+
+  <!-- course section -->
+
+  <section class="courses-section">
+    <p class="courses-subtitle">Start Your Dream Career!</p>
+    <h2 class="courses-title">Explore Featured Courses</h2>
+
+    <div class="courses-container">
+
+      <!-- Card 1 -->
+      <div class="course-card">
+        <img src="https://refactory.academy/wp-content/uploads/2025/08/MAL_6149-1024x682.jpg"
+          alt="Foundational Courses">
+        <h3>Foundational Courses</h3>
+        <p>
+          These courses build the essential knowledge and skills needed
+          to thrive in more advanced or specialized tech fields.
+        </p>
+        <button class="course-btn">Learn more</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="course-card">
+        <img src="https://refactory.academy/wp-content/uploads/2025/09/MAL_6245-1024x682.jpg"
+          alt="Apprenticeship Course">
+        <h3>Apprenticeship Course</h3>
+        <p>
+          Designed to provide aspiring software developers with
+          technical training and industry-led mentorship.
+        </p>
+        <button class="course-btn">Learn more</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="course-card">
+        <img src="https://refactory.academy/wp-content/uploads/2025/07/MAL_6484-1024x682.jpeg" alt="Advanced Courses">
+        <h3>Advanced Courses</h3>
+        <p>
+          Go beyond the basics to develop mastery in high-demand fields
+          and prepare for innovation-driven careers.
+        </p>
+        <button class="course-btn">Learn more</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
 </body>
 
 </html>
